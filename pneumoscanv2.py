@@ -26,7 +26,7 @@ except:
 
 # load the recognition network
 
-net = jetson_inference.imageNet(model="model/pneumoniav100/resnet18.onnx", labels="model/pneumoniav100/labels.txt",
+net = jetson_inference.imageNet(model="model/resnet18.onnx", labels="model/labels.txt",
                input_blob="input_0", output_blob="output_0")
 
 # create video sources & outputs
